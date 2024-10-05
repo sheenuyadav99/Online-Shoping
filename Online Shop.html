@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>S.Y Readymade Store</title>
+  <link rel="stylesheet" href="Online Shop style.css" />
+  <style>
+    /* Your existing CSS styling remains the same */
+    .image-container img {
+      background-color: #dfebed;
+      width: 20%;
+      height: 200px;
+      margin: 10px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .button-container button {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      display: none; /* Hide initially */
+    }
+
+    .form-container {
+      display: none; /* Hide form initially */
+      margin-top: 20px;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .form-container label, .form-container input, .form-container select {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .form-container input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>S.Y Readymade Store</h1>
+  </header>
+
+  <main>
+    <div class="container">
+        <div class="category">
+            <h3>Footwear</h3>
+            <div class="image-container">
+                <!-- Clickable image -->
+                <a href="#" onclick="showBuyNowButton()">
+                    <img src="C:\Users\HP\OneDrive\Desktop\Online Shoping\Footwear1.jpg">
+                    <img src="C:\Users\HP\OneDrive\Desktop\Online Shoping\Footwear2.jpg">
+                    <img src="C:\Users\HP\OneDrive\Desktop\Online Shoping\Footwear3.jpg">
+                    <div class="button-container">
+                        <button onclick="showForm()">Buy Now</button>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- Buy Now button -->
+      <div class="button-container">
+        <button onclick="showForm()">Buy Now</button>
+      </div>
+
+      <!-- Form for user details -->
+      <div class="form-container">
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="phone">Phone No:</label>
+          <input type="tel" id="phone" name="phone" required>
+
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address" required>
+
+          <label for="pin-code">Pin Code:</label>
+          <input type="text" id="pin-code" name="pin-code" required>
+
+          <label for="location">Location:</label>
+          <select id="location" name="location">
+            <option value="">Choose...</option>
+            <option value="Amroha">Amroha</option>
+            <option value="Moradabad">Moradabad</option>
+            <option value="Bijnor">Bijnor</option>
+          </select>
+
+          <label for="payment">Payment Method:</label>
+          <select id="payment" name="payment">
+            <option value="online">Online Payment</option>
+            <option value="offline">Offline Payment</option>
+          </select>
+
+          <input type="submit" value="Place Order">
+        </form>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="category">
+            <h3>Gift Items</h3>
+            <div class="image-container">
+                <!-- Clickable image -->
+                <a href="#" onclick="showBuyNowButton()">
+                    <img src="C:\Users\HP\OneDrive\Desktop\Online Shoping\Gift1.jpg">
+                    <img src="C:\Users\HP\OneDrive\Desktop\Online Shoping\Gift2.jpg">
+                    <img src="C:\Users\HP\OneDrive\Desktop\Online Shoping\Gift3.jpg">
+                    <div class="button-container">
+                        <button onclick="showForm()">Buy Now</button>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    <div class="container">
+        <div class="category">
+            <h3>Cosmetic</h3>
+            <div class="image-container">
+                <!-- Clickable image -->
+                <a href="#" onclick="showBuyNowButton()">
+                    <img src="C:\Users\HP\OneDrive\Desktop\Online Shoping\Cosmetic1.jpg">
+                    <img src="C:\Users\HP\OneDrive\Desktop\Online Shoping\Cosmetic2.jpg">
+                    <img src="C:\Users\HP\OneDrive\Desktop\Online Shoping\Cosmetic3.jpg">
+                    <div class="button-container">
+                        <button onclick="showForm()">Buy Now</button>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    <div class="container">
+        <div class="category">
+            <h3>Summer ClothesSummer Clothes</h3>
+            <div class="image-container">
+                <!-- Clickable image -->
+                <a href="#" onclick="showBuyNowButton()">
+                    <img src="C:\Users\HP\OneDrive\Desktop\Online Shoping\Summer Clothes1.jpg">
+                    <img src="C:\Users\HP\OneDrive\Desktop\Online Shoping\Summer Clothes2.jpg">
+                    <img src="C:\Users\HP\OneDrive\Desktop\Online Shoping\Summer Clothes3.jpg">
+                    <div class="button-container">
+                        <button onclick="showForm()">Buy Now</button>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    <div class="container">
+        <div class="category">
+            <h3>Body Spray</h3>
+            <div class="image-container">
+                <!-- Clickable image -->
+                <a href="#" onclick="showBuyNowButton()">
+                    <img src="C:\Users\HP\OneDrive\Desktop\Online Shoping\Body Spray1.jpg">
+                    <img src="C:\Users\HP\OneDrive\Desktop\Online Shoping\Body Spray2.jpg">
+                    <img src="C:\Users\HP\OneDrive\Desktop\Online Shoping\Body Spray3.jpg">
+                    <div class="button-container">
+                        <button onclick="showForm()">Buy Now</button>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; S.Y Readymade Store. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function showBuyNowButton() {
+      document.querySelector('.button-container button').style.display = 'inline-block';
+    }
+
+    function showForm() {
+      document.querySelector('.form-container').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
